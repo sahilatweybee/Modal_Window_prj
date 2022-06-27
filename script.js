@@ -1,6 +1,5 @@
 'use strict';
 
-let i = 0;
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.overlay');
 var btnClose = document.querySelector('.close-modal');
@@ -17,7 +16,7 @@ const closeModal = function () {
     overlay.classList.add('hidden');
 }
 
-for(i=0; i<btnShow.length; i++){
+for(let i=0; i<btnShow.length; i++){
     btnShow[i].addEventListener('click', openModal);
 }
 
